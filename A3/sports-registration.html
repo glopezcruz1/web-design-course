@@ -137,3 +137,32 @@ input[type="reset"] {
   color: #6b7280;
 }
 </style>
+
+<script>
+
+function validateForm() {
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confirm = document.getElementById("confirm").value;
+  var age = document.getElementById("age").value;
+
+  if (name === "" || email === "") {
+    alert("Full Name and Email are required.");
+    return false;
+  }
+
+  if (password !== confirm) {
+    alert("Passwords must match.");
+    return false;
+  }
+
+  if (age < 16 || age > 80) {
+    alert("Age must be between 16 and 80.");
+    return false;
+  }
+
+  return true;
+}
+</script>
