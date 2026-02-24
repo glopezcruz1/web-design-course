@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Event Registration Page</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b6aa2;
+  margin-bottom: 18px;
+}
+
+h2 {
+  margin-top: 26px;
+  color: #111827;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e6f2fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 760px) {
+  .row2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+}
+
+.groupBox {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+
+.groupTitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.inline {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.inline input {
+  width: auto;
+}
+
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #0b6aa2;
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: #6b7280;
+  color: white;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
