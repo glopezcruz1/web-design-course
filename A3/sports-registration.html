@@ -218,3 +218,93 @@ function validateForm() {
 </tbody>
 </table>
 
+<h2>Register for an Event</h2>
+
+<form method="post" onsubmit="return validateForm()">
+
+<div class="row2">
+
+<div>
+<label>Full Name (required)</label>
+<input type="text" id="name" name="fullName" required>
+</div>
+
+<div>
+<label>Age (16 to 80)</label>
+<input type="number" id="age" name="age" min="16" max="80" required>
+</div>
+
+<div>
+<label>Email (required)</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div>
+<label>Country</label>
+<select name="country">
+<option>Choose a country</option>
+<option>United States</option>
+<option>Canada</option>
+<option>Mexico</option>
+<option>Germany</option>
+<option>Japan</option>
+</select>
+</div>
+
+<div>
+<label>Password</label>
+<input type="password" id="password" name="password">
+</div>
+
+<div>
+<label>Confirm Password</label>
+<input type="password" id="confirm" name="confirmPassword">
+</div>
+
+</div>
+
+<div class="groupBox">
+<div class="groupTitle">Ticket Type (choose one)</div>
+<div class="inline">
+<label><input type="radio" name="ticket" value="Standard" required> Standard</label>
+<label><input type="radio" name="ticket" value="VIP"> VIP</label>
+<label><input type="radio" name="ticket" value="Student"> Student</label>
+</div>
+</div>
+
+<div class="groupBox">
+<div class="groupTitle">Extra Options (choose any)</div>
+<div class="inline">
+<label><input type="checkbox" name="extras" value="Parking"> Parking</label>
+<label><input type="checkbox" name="extras" value="Meal"> Meal</label>
+<label><input type="checkbox" name="extras" value="Merchandise"> Merchandise</label>
+</div>
+</div>
+
+<div class="row2">
+<div>
+<label>Event Date</label>
+<input type="date" name="eventDate">
+</div>
+
+<div>
+<label>Arrival Time</label>
+<input type="time" name="arrivalTime">
+</div>
+</div>
+
+<div class="buttons">
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset Form">
+</div>
+
+<div class="note">
+Please enter your name and email. Passwords must match and age should be between 16 and 80.
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
